@@ -31,27 +31,35 @@ Context Buttons are anchor tags and use the class `.mls-context-btn`.
 ### General Inputs
 Inputs are pulled from bootstrap and modified with the class `.mls-input`.
 
-```<div class="input-group mls-input">
+```
+<div class="input-group mls-input">
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>```
+</div>
+```
 
 <!-- Full width inputs add the class of mls-input-full -->
 
-```<div class="input-group mls-input-full">
+```
+<div class="input-group mls-input-full">
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>```
+</div>
+```
 
 <!-- Large inputs add the class of mls-input-lg-->
 
-```<div class="input-group mls-input-lg">
+```
+<div class="input-group mls-input-lg">
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>```
+</div>
+```
 
 <!-- Small inputs add the class of mls-input-sm-->
 
-```<div class="input-group mls-input-sm">
+```
+<div class="input-group mls-input-sm">
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>```
+</div>
+```
 
 ### Input Textarea
 
