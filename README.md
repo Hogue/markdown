@@ -132,23 +132,6 @@ To display results/options add a ul below the `<input>` or `<a>` tag and add the
   </ul>
 </div>
 ```
-here's the bootstrap for dropdown
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-
-
 
 #Filtering 
 
@@ -158,30 +141,22 @@ these are represented by the classes ```mls-filter-date```, ```mls-filter-option
 
 <!-- filtering by date add the class of mls-filter-date -->
    
-**this one is tricky — we have two kinds of dropdowns with two different kinds of results.  
-
-<div class="sorting-and-filtering-header">
-   <div class="btn-drop-down-container">
-   <a class="mls-btn-popup" href="" title="">Story Date</a>
-   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+To add filtering by Brand or Region we use the bootstrap component but our own `<ul>` class of `.mls-dropdown-flush` and add the class of `.mls-filter-options` to the parent element (container).
+```
+<div class="dropdown mls-filter-options">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="mls-dropdown-flush" aria-labelledby="dropdownMenu1">
     <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
     <li><a href="#">Something else here</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="#">Separated link</a></li>
   </ul>
-  </div>
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown
-     <span class="caret"></span>
-     </button>
-     <ul class="dropdown-menu">
-         <li><a href="#">Result</a></li>
-         <li><a href="#">Result</a></li>
-     </ul>
-   </div>
 </div>
+```
 
 # Story Card
 
