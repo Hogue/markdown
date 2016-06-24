@@ -135,12 +135,12 @@ To display results/options add a ul below the `<input>` or `<a>` tag and add the
 
 #Filtering 
 
-There are three types of filters: date-range-selectors, possible options, and search.
+There are three types of filters: date-range-selectors, possible options (brand & region), and search.
 
 these are represented by the classes ```mls-filter-date```, ```mls-filter-options```, ```mls-filter-search```
 
 <!-- filtering by date add the class of mls-filter-date -->
-   
+##### Options (brand & region)   
 To add filtering by Brand or Region we use the bootstrap component but our own `<ul>` class of `.mls-dropdown-flush` and add the class of `.mls-filter-options` to the parent element (container).
 ```
 <div class="dropdown mls-filter-options">
@@ -157,7 +157,20 @@ To add filtering by Brand or Region we use the bootstrap component but our own `
   </ul>
 </div>
 ```
-
+##### Search 
+To add filtering by search we reuse our input class `mls-input-sm` and ul class `dropdown-dropdown-flush`
+```
+<div class="input-group mls-input-sm">
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <ul class="mls-dropdown-flush" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
 # Story Card
 
 ```
