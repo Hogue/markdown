@@ -200,7 +200,7 @@ Cards can be unread or _important_ and can be chagned using classes.
 
 #Asset Uploading
 
-assets are container in `<div>` tags and inherit the class `.mls-asset` — inside everything is custom except for the bootstrap progress bar.
+assets are contained in `<div>` tags and inherit the class `.mls-asset` — inside everything is custom except for the bootstrap progress bar.
 ```
 <div class="mls-asset">
   <img src="" alt="">
@@ -219,16 +219,17 @@ ex.
  ...
 </div>
 ```
+#Pills
 
-what was this for???
-<div class="autocomplete-input has-results">
-    <input type="text" />
-    <ul class="autocomplete-results-list">
-        ...
-    </ul>
-</div>
+Pills are `<span>` tags and inherit the class `.mls-pill`
 
+```<span class="mls-pill"></span>```
 
+To create a brand pill add on a brand class (there is one for each)
+
+```
+<span class="mls-pill mls-pill-msc"></span>
+```
 
 
 .badge {
