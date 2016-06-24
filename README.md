@@ -171,17 +171,20 @@ To add filtering by search we reuse our input class `mls-input-sm` and ul class 
   </ul>
 </div>
 ```
-# Story Card
 
+##### Date (Cris to decide how to do this)
+
+# Story Card
+Story Cards inherit the class `.mls-card`
 ```
 <div class="mls-card">
-    <h1>
-    <h2>
-</div> ```
+    <h4></h4>
+    <p></p>
+    <h5></h5>
+</div> 
+```
 
-
-
-## Story Card State
+##### Story Card State
 
 Cards can be unread or _important_ and can be chagned using classes.
 
