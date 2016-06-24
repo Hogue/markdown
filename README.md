@@ -91,42 +91,47 @@ Modals are div tags and inherit `.mls-modal`. Although they have set widths, the
 
 ```<div class="mls-curtain"></div>```
 
+
+###Popups/Tooltips
+
+Popups/Tooltips are div tags and inherit `.mls-popup`
+
+<!-- Base style popups use the class of mls-popup -->
+```
+<div class="mls-popup"></div>
+```
+
 #Dropdown Menus
 
 ### Flush with Top (for search results and filtering options)
 
 To display results/options add a ul below the `<input>` or `<a>` tag and add the class `.mls-dropdown-flush` to the parent element
 
-<!-- Full width inputs add the class of mls-input-full -->
-
-####example — searchbar
-
-
-<div class="input-group mls-input-full mls-input-results">
-
+####example — searchbar dropdown results
+```
+<div class="input-group mls-input-full .mls-dropdown-flush">
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li><a href="#">Result</a></li>
+    <li><a href="#">Result</a></li>
+    <li><a href="#">Result</a></li>
   </ul>
-
 </div>
+```
+### Separate from button (not flush)
 
+ To display a popup menu we use our custom we use the bootstrap component, but replace their button with our own `<a class="mls-btn-popup" href="" title="">Story Date</a>` and then add `.mls-dropdown-separate` to the parent element (container element)
 
-####example — dropdown button
-<div class="btn-group" role="group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown
-     <span class="caret"></span>
-     </button>
-     <ul class="dropdown-menu">
-         <li><a href="#">Result</a></li>
-         <li><a href="#">Result</a></li>
-     </ul>
-   </div>
-
+####example — dropdown menu
+```
+<div class="btn-group mls-dropdown-separate" role="group">
+  <a class="mls-btn-popup" href="" title="">Story Date</a>
+  <ul class="dropdown-menu">
+    <li><a href="#">menu-item</a></li>
+    <li><a href="#">menu-item</a></li>
+  </ul>
+</div>
+```
 here's the bootstrap for dropdown
 
 <div class="dropdown">
