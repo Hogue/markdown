@@ -101,7 +101,7 @@ Popups/Tooltips are div tags and inherit `.mls-popup`
 <div class="mls-popup"></div>
 ```
 
-#Dropdown Menus
+#Dropdowns
 
 ### Flush with Top (for search results and filtering options)
 
@@ -198,7 +198,29 @@ Cards can be unread or _important_ and can be chagned using classes.
 </div>
 ```
 
+#Asset Uploading
 
+assets are container in `<div>` tags and inherit the class `.mls-asset` — inside everything is custom except for the bootstrap progress bar.
+```
+<div class="mls-asset">
+  <img src="" alt="">
+  <h4></h4>
+  <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+</div>
+```
+there are two additional classes for successful and failed attempts at uploading `.mls-asset-success` `.mls-asset-fail`
+ex. 
+```
+<div class="mls-asset mls-asset-fail">
+ ...
+</div>
+```
+
+what was this for???
 <div class="autocomplete-input has-results">
     <input type="text" />
     <ul class="autocomplete-results-list">
@@ -206,21 +228,7 @@ Cards can be unread or _important_ and can be chagned using classes.
     </ul>
 </div>
 
-# Dropdowns
 
-
-<ul class="dropdown-menu mls-popover" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-
-  .mls-popover {
-
-      shadow,
-      border-radius
 
 
 .badge {
