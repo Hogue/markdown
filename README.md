@@ -229,7 +229,7 @@ To create a brand pill add on a brand class (there is one for each)
 
 ```<span class="mls-pill mls-pill-msc"></span>```
 
-#status-labels
+#Status Labels
 
 Status Labels are `<span>` tags and inherit the class `.mls-status`
 
@@ -238,6 +238,8 @@ Status Labels are `<span>` tags and inherit the class `.mls-status`
 To add a status to the label apply an additional status class to it, there are: `.mls-status-working`, `.mls-status-new`, `.mls-status-new`, `.mls-status-rejected`
 
 ```<span class="mls-status mls-status-working"></span>```
+
+#Badges 
 
 .badge {
 
